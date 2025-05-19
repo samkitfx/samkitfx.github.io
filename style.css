@@ -147,7 +147,106 @@ body {
     border-radius: 10px;
     box-shadow: var(--shadow);
 }
+/* Add these CSS styles */
+.education {
+    padding: 4rem 0;
+    background: white;
+}
 
+.timeline-header h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.institution {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.awards {
+    padding: 4rem 0;
+    background: var(--light-bg);
+}
+
+.awards-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.award-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.award-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.languages {
+    padding: 4rem 0;
+}
+
+.language-grid {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.language-progress {
+    margin-bottom: 1.5rem;
+}
+
+.language-progress h4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.language-progress span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--accent-color);
+    transition: width 0.5s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+/* Print Styles */
+@media print {
+    .contact-banner, .social-links {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .project-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
