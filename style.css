@@ -1,0 +1,163 @@
+/* iOS-Themed Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', sans-serif;
+}
+@media (max-width: 768px) {
+    section {
+      padding: 1rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1d1d1f; /* Apple-style dark gray */
+  }
+
+/* Header */
+/* Update CSS */
+header {
+    padding: 2rem 1rem; /* Better spacing */
+  }
+  
+  .profile-img {
+    width: 150px; /* Force square size */
+    height: 150px;
+    object-fit: cover; /* Prevent stretching */
+  }
+  
+  /* Add this for subtitle */
+  header p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
+.badges {
+    margin-top: 1rem;
+}
+
+.badge {
+    height: 40px;
+    margin: 0 10px;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+h2 {
+    color: #1d1d1f;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Skills Grid */
+.skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem; /* Add side padding */
+  }
+
+.skill-category {
+    background: #ffffff;
+  border: 1px solid #e5e5e5; /* Subtle border */
+}
+
+.skill-category h3 {
+    color: #0A84FF;
+    margin-bottom: 1rem;
+}
+
+.skill-category li {
+    list-style: none;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f5f5f7;
+}
+
+/* Projects */
+.project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .project-item {
+    min-height: 300px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .links {
+    margin-top: auto; /* Push links to bottom */
+  }
+
+.app-store-link, .testflight-link, .github-link {
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.app-store-link {
+    background: #0A84FF;
+    color: white;
+}
+
+.testflight-link {
+    background: #32D74B;
+    color: white;
+}
+
+.github-link {
+    background: #1d1d1f;
+    color: white;
+}
+
+/* Experience */
+.job {
+    background: #f5f5f7; /* Apple light gray */
+}
+
+.date {
+    color: #86868b;
+    font-size: 0.9rem;
+}
+
+/* Contact */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.email-link, .linkedin-link, .github-link {
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.email-link { background: #FF453A; color: white; }
+.linkedin-link { background: #0A66C2; color: white; }
+.github-link { background: #1d1d1f; color: white; }
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #1d1d1f;
+    color: white;
+}
